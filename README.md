@@ -461,3 +461,12 @@ MIT，见 [LICENSE](LICENSE)。
 | [video-recap-skills](https://github.com/zenstory-ai/video-recap-skills) | 将支持的视频文件制作成中文解说，可选导出可编辑的剪映/CapCut 草稿（本仓库） |
 | [oh-story-dsh](https://github.com/zenstory-ai/oh-story-dsh) | DeepSeek Harness 社区插件，提供小说、短剧、游戏和视频解说工作台 |
 | [zenstory](https://github.com/zenstory-ai/zenstory) | 对话即创作的 AI 小说写作工作台（[app.zenstory.ai](https://app.zenstory.ai)） |
+
+## Standalone command (one MiMo key)
+
+Run without an agent host: [setup, usage and offline example](docs/standalone-recap.md).
+
+```bash
+python3 scripts/auto_recap.py input.mp4 --seconds 60 --out my-recap --draft
+python3 scripts/auto_recap.py --demo --seconds 8 --out demo-recap
+```

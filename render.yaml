@@ -1,0 +1,13 @@
+# Small-trial configuration. Free instances can restart and lose files/jobs.
+services:
+  - type: web
+    name: chinese-video-recap
+    runtime: docker
+    branch: coderabbit/video-recap-generator/dc0baa99
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeployTrigger: "off"
+    envVars:
+      - key: RECAP_WEB_PASSWORD
+        sync: false

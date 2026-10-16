@@ -1,0 +1,14 @@
+**
+!Dockerfile
+!scripts/
+!scripts/auto_recap.py
+!scripts/auto_media.py
+!scripts/auto_mimo.py
+!scripts/auto_web.py
+!scripts/auto_web.html
+!skills/
+!skills/video-assemble/
+!skills/video-assemble/**
+**/__pycache__/
+**/*.pyc
+**/.env*

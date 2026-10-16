@@ -468,3 +468,12 @@ This project is maintained by [ZenStory AI](https://zenstory.ai) — open-source
 | [video-recap-skills](https://github.com/zenstory-ai/video-recap-skills) | Create Chinese-narration recaps from supported video files, with optional editable JianYing/CapCut draft export (this repo) |
 | [oh-story-dsh](https://github.com/zenstory-ai/oh-story-dsh) | Community DeepSeek Harness plugin with novel, short-drama, game and video-recap workbenches |
 | [zenstory](https://github.com/zenstory-ai/zenstory) | Chat-to-create AI novel-writing workbench ([app.zenstory.ai](https://app.zenstory.ai)) |
+
+## Standalone command (one MiMo key)
+
+Run without an agent host: [setup, usage and offline example](docs/standalone-recap.md).
+
+```bash
+python3 scripts/auto_recap.py input.mp4 --seconds 60 --out my-recap --draft
+python3 scripts/auto_recap.py --demo --seconds 8 --out demo-recap
+```

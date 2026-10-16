@@ -63,3 +63,7 @@ brief 预算与 video-script 的旁白 lint 共用的四个文本原语（`_reco
 
 `python3 scripts/test.py orchestrator` 覆盖：禁止跨技能 import 与路径引用、每个脚本模块不超过 800 行、技能内 import 无环、
 每份 `lib.py` 只声明自己读取的配置键、复制函数保持一致、剪映模块不进入核心渲染路径。
+
+## 独立自动入口
+
+`scripts/auto_recap.py` 是用户明确要求的单 key 自动模式，独立于七个技能。`auto_mimo.py` 处理远程 API，`auto_media.py` 处理本地媒体；只通过 timeline v2 与剪映导出子进程衔接。安装、数据发送范围和质量边界见 [使用说明](standalone-recap.md)。
